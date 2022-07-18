@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Origin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ddong1"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong2"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong3"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong4"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong5"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong6"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong7"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong8"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong9"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ddong10"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ddong"
+            app:layout_constraintLeft_toRightOf="@+id/ddong9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/lperson"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/cookie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textColor="#0000AA"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            >
+            <ImageView
+            android:id="@+id/leftbtn"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/left" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/rightbtn"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
